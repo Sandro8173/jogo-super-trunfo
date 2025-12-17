@@ -7,7 +7,7 @@ int main(){
 
 
      //Primeira carta
-      int   p_turisc;
+      int   p_turisc,I=0;
       int   ataque;
      
       float popu;
@@ -44,10 +44,11 @@ int main(){
       printf("--------------------SUPER-TRUNFO-------------------------------\n");
     
 
-    
-      
+    while (I <= 5)
+    {
 
      //Dados Primeira Carta   
+      printf("-------------------///////////////------------------------------\n");
       printf("Digite Uma letra, que Representa um dos oito estados! EX(A-H)..\n ");
       scanf("%c",&estado);
 
@@ -106,7 +107,7 @@ int main(){
       poder2 = (PIB2 + popu2)/ Area2;
 
        poder2 = (PIB2 + popu2)/ Area2;
-       especial2 = (Rpib2 + DSD2 +poder2)   / Area2;
+       especial2 = (Rpib2 + DSD2 +poder2) / Area2;
      //Fim Segunda
  
      printf("----------------------------------------------------------------\n");
@@ -161,13 +162,14 @@ int main(){
        }else if ((poder2 == poder)&&(poder2== poder))
        {printf("#####Rodada Empatou#####\n");
        }else{printf("###Carta:2 Vencedora###\n");}
-
+       printf("--------------------////////////-------------------------------------------\n");
       break;
        default:
          printf("Escolha invalida\n");
+         printf("-----------------////////////--------------------------------------------\n");
       break;}
 
-
+      I++; }
      printf("---------------------Fim Do Programa----------------------------\n");
        
      system("pause"); 
